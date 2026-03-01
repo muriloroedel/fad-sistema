@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAD — FI de Abastecimento Digital</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variable.css">
+
+  <script src="../js/script.js" defer></script>
+
+</head>
+
+<body onload="protegerTela(['S4'])">
+
+<header class="app-header">
+  <strong>FAD • S4</strong>
+  <button class="btn-secondary" onclick="logout()">Sair</button>
+</header>
+
+<div class="app-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <button class="btn-secondary toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <ul>
+      <li onclick="listarSolicitacoes()">Solicitações</li>
+      <li onclick="listarFichas()">Fichas Criadas</li>
+    </ul>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="content" id="conteudo">
+    <h2>Painel do S4</h2>
+    <p>Selecione uma opção no menu.</p>
+  </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/s4.js"></script>
+
+</body>
+</html>

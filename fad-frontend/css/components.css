@@ -1,0 +1,162 @@
+.btn-primary {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary:hover {
+  background: #163024;
+  text-align: center;
+}
+
+.btn-secondary {
+  background: var(--azul-operacional);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary:hover {
+  background-color: var(--azul-operacional-hover);
+  transition: 0.8ms;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card input {
+  width: auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.card textarea {
+  width: auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.status-pendente {
+  background: var(--status-pendente);
+}
+
+.status-aprovado {
+  background: var(--status-aprovado);
+}
+
+.status-rejeitado {
+  background: var(--status-rejeitado);
+}
+
+/* LOGIN */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--card);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.login-card h1 {
+  font-size: 4rem;
+  margin-bottom: 0.25rem;
+  color: var(--cor-primaria);
+}
+
+.login-card .subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.login-card label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.login-card select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-card .btn-primary {
+  width: 100%;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 16px;
+}

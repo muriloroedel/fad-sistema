@@ -1,0 +1,18 @@
+:root {
+  --cor-primaria: #1f3d2b;
+  --azul-operacional: #2f5d8a;
+  --azul-operacional-hover: #10273d;
+
+  --cinza-escuro: #2b2b2b;
+  --cinza-claro: #f2f2f2;
+
+  --status-pendente: #d9a441;
+  --status-aprovado: #2e7d32;
+  --status-rejeitado: #c62828;
+
+  --fonte-padrao: 'Inter', Arial, sans-serif;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --text-muted: #6b7280;
+}

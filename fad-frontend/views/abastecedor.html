@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAD</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variable.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body onload="protegerTela(['ABASTECEDOR']); carregarFichas();">
+
+<header class="app-header">
+  <strong>FAD • Abastecedor</strong>
+  <button class="btn-secondary" onclick="logout()">Sair</button>
+</header>
+
+<div class="app-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <button class="btn-secondary toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <ul>
+      <li onclick="carregarFichas()">Fichas Autorizadas</li>
+    </ul>
+  </aside>
+
+  <!-- CONTEÚDO DINÂMICO -->
+  <main class="content" id="conteudo">
+    <h2>Bem-vindo, Abastecedor</h2>
+    <p>Selecione uma opção no menu.</p>
+  </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/abastecedor.js"></script>
+
+<script>
+  function logout() {
+    localStorage.clear();
+    window.location.href = 'login.html';
+  }
+</script>
+
+</body>
+</html>
